@@ -1,11 +1,10 @@
 
 import FadeIn from "../shared/fadeIn";
-import mother from "/mother.png"
-import holdingStet from "/holding-stethoscope.jpg"
-import laboratory from "/laboratory.png"
-import power from "/powersupply.png"
-import ultrasound from "/ultrasound.png"
-import ward from "/ward.png"
+import holdingStet from ".../assets/images/holding-stethoscope.jpg"
+import laboratory from ".../assets/images/laboratory.png"
+import power from ".../assets/images/powersupply.png"
+import ultrasound from ".../assets/images/ultrasound.png"
+import ward from ".../assets/images/ward.png"
 
 const createRoot = () => {
 

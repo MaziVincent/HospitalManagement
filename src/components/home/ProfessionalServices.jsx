@@ -1,12 +1,11 @@
 
-import mother from "/mother.png"
+
 import FadeIn from "../shared/fadeIn";
-import arrowIcon from "/arrow-icon.svg";
-import family from "/public-health.png";
-import maternity from "/maternity1.png";
-import ovum from "/ovum.png";
-import womb from "/womb.png";
-import plusIcon from "/plus-icon.svg";
+import arrowIcon from ".../assets/images/arrow-icon.svg";
+import family from ".../assets/images/public-health.png";
+import ovum from ".../assets/images/ovum.png";
+import womb from ".../assets/images/womb.png";
+import plusIcon from ".../assets/images/plus-icon.svg";
 
 const ProfessionalServices = () => {
 

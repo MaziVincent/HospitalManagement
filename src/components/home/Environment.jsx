@@ -1,6 +1,6 @@
 
 import FadeIn from "../shared/fadeIn";
-import hospitalFront from "/hospitalFront.jpeg"
+import hospitalFront from ".../assets/images/hospitalFront.jpeg"
 
 const Environment = () => {
     return ( 

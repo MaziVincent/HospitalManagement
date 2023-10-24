@@ -1,7 +1,5 @@
 import FadeIn from "../shared/fadeIn";
-import Nav from "./Nav";
-import hospitalFront from "/hospitalFront.jpeg";
-import stetoscope from "/stethoscope-copy-space.jpg"
+import stetoscope from ".../assets/images/stethoscope-copy-space.jpg"
 
 const Hero = () => {
   return (

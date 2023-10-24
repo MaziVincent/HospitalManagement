@@ -1,10 +1,8 @@
 
 import FadeIn from "../shared/fadeIn";
-import integrity2 from '/integrity2.png';
-import innovation1 from '/innovation1.png';
-import innovation2 from '/innovation2.png';
-import integrity3 from '/integrity3.png';
-import patient1 from '/patient1.png';
+import innovation1 from '.../assets/images/innovation1.png';
+import integrity3 from '.../assets/images/integrity3.png';
+import patient1 from '.../assets/images/patient1.png';
 
 const ServicesList = () => {
     

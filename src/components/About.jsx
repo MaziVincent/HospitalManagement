@@ -1,6 +1,6 @@
 
 import FadeIn from "./shared/fadeIn";
-import hospitalfront from "/hospitalFront.jpeg"
+import hospitalfront from "../assets/images/hospitalFront.jpeg"
 
 
 const About = () => {
