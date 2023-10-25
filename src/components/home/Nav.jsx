@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from ".../assets/images/logo.png"
+import logo from "../../assets/images/logo.png"
 
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { ClickAwayListener } from "@mui/material";
 
 const Nav = () => {
 
@@ -11,14 +12,16 @@ const Nav = () => {
 
     return (
 
+      <ClickAwayListener onClickAway={()=>{setShowMobileMenu(false)}} >
+
     <div
         className=" fixed top-0  w-full  flex bg-gray-50
         items-center justify-between py-3 mx-auto px-5  z-10 shadow-lg rounded-b-xl"
       >
         <div>
-           <Link className="flex items-center w-25 gap-4 md:gap-8">
+           <Link to='/' className="flex items-center w-25 gap-4 md:gap-8">
            <img src={logo} alt="" className="w-16"  />
-            <p className="text-lg lg:text-3xl font-sans text-gray-700 cursor-pointer font-semibold">Fatima Specialist Hospital & Maternity</p>
+            <p className="text-lg lg:text-3xl font-sans text-gray-700 cursor-pointer font-semibold">Fatima Specialist Hospital &<span className="text-red-600"> Maternity</span></p>
            </Link> 
         </div>
         
@@ -48,13 +51,13 @@ const Nav = () => {
           />
 
           <ul className="pt-[60px] items-center flex flex-col gap-8">
-            <Link to="about" className="text-lg text-black hover:text-white cursor-pointer hover:bg-gradient-to-r from-red-400 to-blue-500 w-full text-center rounded-md"  >
+            <Link to="about" onClick={() => setShowMobileMenu(false)} className="text-lg text-black hover:text-white cursor-pointer hover:bg-gradient-to-r from-blue-300 to-blue-500 w-full text-center rounded-md"  >
               About
             </Link>
-            <Link to="services" className="text-lg text-black hover:text-white cursor-pointer hover:bg-gradient-to-r from-red-400 to-blue-500 w-full text-center rounded-md" >
+            <Link to="services" onClick={() => setShowMobileMenu(false)} className="text-lg text-black hover:text-white cursor-pointer hover:bg-gradient-to-r from-blue-300 to-blue-500 w-full text-center rounded-md" >
               Services
             </Link>
-            <Link to="contacts" className="text-lg text-black hover:text-white cursor-pointer hover:bg-gradient-to-r from-red-400 to-blue-500 w-full text-center rounded-md" >
+            <Link to="contacts" onClick={() => setShowMobileMenu(false)} className="text-lg text-black hover:text-white cursor-pointer hover:bg-gradient-to-r from-blue-300 to-blue-500 w-full text-center rounded-md" >
               Contacts
             </Link>
            
@@ -63,6 +66,8 @@ const Nav = () => {
           
         </div>
       </div>
+
+      </ClickAwayListener>
     
      );
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { EmailRounded, PhoneIphone, LocationCity } from "@mui/icons-material";
 
 
 
@@ -5,11 +7,11 @@ const Footer = () => {
 
     return ( 
     <div className="bg-[linear-gradient(133deg,_#566270_0%,_#283444_100%)] rounded-t-xl">
-    <div className="max-w-[1490px] mx-auto px-10 py-[120px]">
+    <div className="md:max-w-[1490px] mx-auto px-10 py-[120px]">
       <div className="flex flex-col items-center xl:items-start xl:flex-row xl:justify-between gap-12">
         <div className="w-full xl:w-auto flex flex-col items-center xl:items-start">
-          <h2 className="text-white text-center xl:text-start font-medium text-3xl lg:text-[32px]">
-            Newsletter
+          <h2 className="text-white text-center xl:text-start font-medium text-4xl lg:text-[32px]">
+            Fatima Specialist Hospital & Maternity
           </h2>
           <div className="relative w-full xs:w-[380px] xl:w-[320px] mt-11">
             <input
@@ -19,10 +21,10 @@ const Footer = () => {
                 xs:text-lg placeholder-white"
             />
             <div
-              className="absolute top-2/4 -translate-y-2/4 right-3 bg-[linear-gradient(90deg,_#2AF598_0%,_#009EFD_100%)] px-6 py-2.5 rounded-full
+              className="absolute top-2/4 -translate-y-2/4 right-3 bg-[linear-gradient(90deg,_#50b7eb_0%,_#009EFD_100%)] px-6 py-2.5 rounded-full
               cursor-pointer text-white"
             >
-              Subscribe
+              Book an Appointment
             </div>
           </div>
         </div>
@@ -42,21 +44,21 @@ const Footer = () => {
                       className="w-full flex mx-auto justify-center xl:justify-start"
                     >
                       <li className="font-medium text-lg md:text-lg cursor-pointer text-center xl:text-start w-fit">
-                        About
+                        <Link to="about">About </Link> 
                       </li>
                     </div>
                     <div
                       className="w-full flex mx-auto justify-center xl:justify-start"
                     >
                       <li className="font-medium text-lg md:text-lg cursor-pointer text-center xl:text-start w-fit">
-                        Contacts
+                      <Link to="contacts">Contacts </Link>
                       </li>
                     </div>
                     <div
                       className="w-full flex mx-auto justify-center xl:justify-start"
                     >
                       <li className="font-medium text-lg md:text-lg cursor-pointer text-center xl:text-start w-fit">
-                        Services
+                      <Link to="services">Services </Link>
                       </li>
                     </div>
                   
@@ -68,7 +70,7 @@ const Footer = () => {
           <div className="flex flex-col xs:flex-row gap-12 w-full md:w-auto">
             
               <div
-                className="text-white max-w-screen md:max-w-[340px] flex-1 md:flex-auto"
+                className="text-white w-full md:max-w-[340px] flex-1 md:flex-auto"
               >
                 <h6 className="mb-8 text-2xl lg:text-3xl font-bold text-center xl:text-start">
                   Reach Out
@@ -82,7 +84,7 @@ const Footer = () => {
                         className={`font-medium text-lg cursor-pointer
                         text-center xl:text-start w-fit`}
                       >
-                        NO. 12 Some Street Addree
+                       <LocationCity/> No. 1 Stephen Mgbabor Road, Amike-Aba, Abakaliki, Ebonyi State, Nigeria
                       </li>
                     </div>
                     <div
@@ -92,7 +94,7 @@ const Footer = () => {
                         className={`font-medium text-lg cursor-pointer
                         text-center xl:text-start w-fit`}
                       >
-                        0803Something
+                       <PhoneIphone/> +2348037407645
                       </li>
                     </div>
                     <div
@@ -100,9 +102,9 @@ const Footer = () => {
                     >
                       <li
                         className={`font-medium text-lg cursor-pointer
-                        text-center xl:text-start w-fit`}
+                        text-center xl:text-start w-fit `}
                       >
-                        SomeEmail@something.com
+                       <EmailRounded /> fatimahospital2018@gmail.com
                       </li>
                     </div>
                   

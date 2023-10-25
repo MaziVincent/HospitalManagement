@@ -1,11 +1,18 @@
 import FadeIn from "../shared/fadeIn";
-import stetoscope from ".../assets/images/stethoscope-copy-space.jpg"
+import stetoscope from "../../assets/images/stethoscope-space.jpg"
+import { Link } from "react-router-dom";
 
 const Hero = () => {
+
+    const openModal = () => {
+
+      console.log('modal open')
+    }
+
   return (
     <>
       <div
-        className="h-screen relative flex flex-col items-center pt-40 "
+        className="h-screen relative flex flex-col items-center pt-40 gap-6 "
         style={{
           background: `url(${stetoscope})`,
           backgroundPosition: "bottom",
@@ -33,6 +40,22 @@ const Hero = () => {
           <h5 className="mt-6 text-center text-lg lg:text-xl xs:text-xl text-white max-w-[500px]">
           Compassionate Care, Expertise, and Hope. Experience Unrivaled Care at Fatima Specialist Hospital
           </h5>
+        </FadeIn>
+        <FadeIn 
+          delay={0.6}
+          direction="up"
+          padding
+          fullWidth
+        >
+        <div className="flex flex-row justify-center items-center">
+                    <Link className="bg-blue-500 hover:bg-blue-600 focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base
+               px-5 py-2.5 text-center text-gray-50
+               mr-3 md:mr-0 dark:bg-blue-500 dark:hover:bg-blue-600 "
+               onClick={()=>openModal()}
+            >         
+                        Book an Appointment</Link>
+                </div>
         </FadeIn>
       </div>
     </>

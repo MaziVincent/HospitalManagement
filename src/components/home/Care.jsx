@@ -1,25 +1,25 @@
 
 import FadeIn from "../shared/fadeIn";
-import holdingStet from ".../assets/images/holding-stethoscope.jpg"
-import laboratory from ".../assets/images/laboratory.png"
-import power from ".../assets/images/powersupply.png"
-import ultrasound from ".../assets/images/ultrasound.png"
-import ward from ".../assets/images/ward.png"
+import holdingStet from "../../assets/images/holding-stethoscope.jpg"
+import laboratory from "../../assets/images/laboratory.png"
+import power from "../../assets/images/powersupply.png"
+import ultrasound from "../../assets/images/ultrasound.png"
+import ward from "../../assets/images/ward.png"
 
 const createRoot = () => {
 
         const services = [
             {title:'Ultra Mordern Laboratory', 
-            subtitle:'Something about safe delivery Something about safe delivery Something about safe delivery',
+            subtitle:'Where Cutting-Edge Technology Meets Care – Discover the Future of Healthcare in Our Ultra-Modern Laboratory.',
             icon:laboratory},
             {title:'UltraSound Machine', 
-            subtitle:'Something about safe delivery,Something about safe delivery Something about safe delivery',
+            subtitle:'Navigating Health with Clarity and Precision – Explore a World of Wellness with Our State-of-the-Art Ultrasound Machine.',
             icon:ultrasound},
             {title:'En-Suite Wards', 
-            subtitle:'Something about safe delivery Something about safe delivery Something about safe delivery',
+            subtitle:'Elevate Your Healing Experience with Unmatched Comfort and Privacy in Our Luxurious En-Suite Wards.',
             icon:ward},
             {title:'24 Hours Power Supply', 
-            subtitle:'Something about safe delivery Something about safe delivery Something about safe delivery',
+            subtitle:'Empowering Care Around the Clock: Our 24-Hour Power Supply Ensures Your Health Always Comes First.',
             icon:power},
         ]
 
@@ -27,14 +27,14 @@ const createRoot = () => {
 
         <div id="care" className="px-10 max-w-[1490px] mx-auto mb-[160px]">
       <FadeIn delay={0.2} direction="down">
-        <h1 className="text-5xl lg:text-[64px] font-medium text-fontBlack mb-6 text-center">
-          Fatime Hospital Core Values
+        <h1 className="text-5xl lg:text-[64px] font-medium text-fontBlack mb-6 text-center after:content-[''] after:block after:w-14 after:border-4 after:border-red-500">
+          What we provide
         </h1>
       </FadeIn>
 
       <FadeIn delay={0.4} direction="down">
         <h5 className="text-[#4F4F4F] text-lg xs:text-xl mb-12">
-          These are the core values we stand for
+          We deliver world class health service
         </h5>
       </FadeIn>
 
