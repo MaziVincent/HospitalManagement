@@ -14,10 +14,10 @@ const ProfessionalServices = () => {
             subtitle:'Elevating Care and Expertise in the World of Obstetrics and Gynaecology.',
             icon:womb},
             {title:'Family Planning and Counseling', 
-            subtitle:"Empowering Your Family's Future with Expert Guidance.",
+            subtitle:"Empowering Your Family's Future with Expert Guidance, Your Family's Compass for a Bright Tomorrow.",
             icon:family},
             {title:'Fertility management',
-            subtitle:'Nurturing Hope, One Family at a Time. ',
+            subtitle:'Nurturing Hope, One Family at a Time. Crafting Your Journey to Parenthood with Precision: Elevate Your Hopes with Advanced Fertility Management ',
             icon:ovum},
         ]
 
@@ -49,11 +49,11 @@ const ProfessionalServices = () => {
       <div className="w-full flex flex-col md:flex-row gap-[160px] md:gap-6">
         {services.map((product, i) => (
           <FadeIn key={i} delay={(i + 1) * 0.2} direction="left" fullWidth>
-            <div className="h-[510px] relative flex-1 bg-[#C1D0E4] rounded-[50px] max-w-[500px]">
+            <div className="h-[480px] relative flex-1 bg-[#C1D0E4] rounded-[50px] max-w-[500px]">
               <img
                 src={product.icon}
                 alt=""
-                className="absolute -top-[105px] left-1/2 -translate-x-1/2"
+                className="absolute -top-[30px] left-1/2 -translate-x-1/2 w-44"
               />
               <div className="absolute bottom-0 w-full bg-white h-[260px] rounded-[50px] shadow-md px-8 py-[26px] flex flex-col justify-between">
                 <div>
@@ -66,11 +66,7 @@ const ProfessionalServices = () => {
                   <h3 className="text-gray-600 text-base lg:text-xl font-medium">
                     {product.subtitle}
                   </h3>
-                  <img
-                    src={plusIcon}
-                    alt=""
-                    className="cursor-pointer h-10 xs:h-12 w-10 xs:w-12"
-                  />
+                  
                 </div>
               </div>
             </div>

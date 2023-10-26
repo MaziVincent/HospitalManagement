@@ -1,6 +1,7 @@
 
 import FadeIn from "./shared/fadeIn";
 import hospitalfront from "../assets/images/hospitalFront.jpeg"
+import md from "../assets/images/fatimamd.png"
 
 
 const About = () => {
@@ -12,11 +13,11 @@ const About = () => {
 
   <div className="bg-gray-100 py-12 pt-28">
       <div className="container mx-auto flex flex-wrap items-center">
-        <div className="w-full md:w-1/2 mb-6 md:mb-0">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0 flex items-center justify-center ">
           <img
-            src="/path-to-hospital-image.jpg"
+            src={hospitalfront}
             alt="[Hospital Name]"
-            className="w-full rounded-lg shadow-lg"
+            className=" w-2/3  rounded-lg shadow-lg"
           />
         </div>
         <div className="w-full md:w-1/2">
@@ -30,14 +31,14 @@ const About = () => {
             At [Hospital Name], our mission is to provide compassionate, patient-centered care that promotes the well-being of our patients. We are dedicated to delivering high-quality healthcare services with integrity, innovation, teamwork, and honesty.
           </p>
         </div>
-        <div className="w-full mt-8">
+        <div className="w-full mt-14">
           <h2 className="text-4xl font-semibold mb-8 text-center">Meet Our Managing Director</h2>
           <div className="flex flex-wrap justify-center items-center gap-4">
             <div className="w-full md:w-1/4 mb-4">
               <img
-                src="/path-to-md-image.jpg"
+                src={md}
                 alt="Dr. [MD Name]"
-                className="w-full rounded-lg shadow-lg"
+                className=" rounded-full shadow-lg"
               />
             </div>
             <div className="w-full md:w-1/2">
