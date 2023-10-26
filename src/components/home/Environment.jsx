@@ -5,7 +5,7 @@ import hospitallab from "../../assets/images/nobody-scientific.jpg"
 import theater from "../../assets/images/interior-view.jpg"
 import nurse from "../../assets/images/nurse-scrubs.jpg"
 import stet from "../../assets/images/stethoscope-space.jpg"
-import ImageSlider from "../shared/imageSlider";
+import ImageSlider from "../shared/ImageSlider"
 
 const Environment = () => {
   const slides = [
